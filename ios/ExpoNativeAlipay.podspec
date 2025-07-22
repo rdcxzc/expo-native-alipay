@@ -11,13 +11,13 @@ Pod::Spec.new do |s|
   s.author         = package['author']
   s.homepage       = package['homepage']
   s.platforms      = { :ios => "9.0" }
-  s.swift_version  = '5.4'
-  s.source         = { git: 'https://github.com/ihwf/expo-native-alipay' }
+  s.swift_version  = '5.9'
+  s.source         = { :path => "." }
   s.static_framework = true
   
   s.dependency "ExpoModulesCore"
-  s.resources = './AlipaySDK.bundle'
-  s.vendored_frameworks = './AlipaySDK.framework'
+  s.resources = 'AlipaySDK.bundle'
+  s.vendored_frameworks = 'AlipaySDK.framework'
 
   s.frameworks = ["UIKit", "Foundation", "CFNetwork", "SystemConfiguration", "QuartzCore", "CoreGraphics", "CoreMotion", "CoreTelephony", "CoreText", "WebKit"]
   s.libraries = ["c++", "z"]
@@ -28,5 +28,5 @@ Pod::Spec.new do |s|
     'SWIFT_COMPILATION_MODE' => 'wholemodule'
   }
 
-  s.source_files = "**/*.{h,m,swift}"
+  s.source_files = "*.{h,m,swift}"
 end

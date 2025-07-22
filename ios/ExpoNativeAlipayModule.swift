@@ -19,8 +19,6 @@ public class ExpoNativeAlipayModule: Module {
     AsyncFunction("registerApp") { (appId: String, universalLink: String?) in
       if let universalLink = universalLink {
         AlipaySDK.defaultService()?.registerApp(appId, universalLink: universalLink)
-      } else {
-        AlipaySDK.defaultService()?.registerApp(appId)
       }
     }
 
@@ -45,7 +43,7 @@ public class ExpoNativeAlipayModule: Module {
     }
 
     AsyncFunction("getVersion") { (promise: Promise) in
-      let version = AlipaySDK.defaultService()?.currentVersion ?? ""
+      let version = AlipaySDK.defaultService()?.currentVersion() ?? ""
       promise.resolve(version)
     }
   }
