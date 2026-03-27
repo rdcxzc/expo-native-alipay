@@ -3,8 +3,8 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "expo-native-alipay": ["../src/index"],
-      "expo-native-alipay/*": ["../src/*"]
+      "expo-native-alipay-mc": ["../src/index"],
+      "expo-native-alipay-mc/*": ["../src/*"]
     }
   }
 }

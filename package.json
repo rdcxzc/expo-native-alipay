@@ -1,5 +1,5 @@
 {
-    "name": "expo-native-alipay",
+    "name": "expo-native-alipay-mc",
     "version": "0.1.1",
     "description": "A Expo Module for supporting Alipay APIs on Android and iOS",
     "main": "build/index.js",
@@ -18,16 +18,16 @@
     "keywords": [
         "react-native",
         "expo",
-        "expo-native-alipay",
+        "expo-native-alipay-mc",
         "ExpoNativeAlipay"
     ],
-    "repository": "https://github.com/ihwf/expo-native-alipay",
+    "repository": "https://github.com/rdcxzc/expo-native-alipay",
     "bugs": {
-        "url": "https://github.com/ihwf/expo-native-alipay/issues"
+        "url": "https://github.com/rdcxzc/expo-native-alipay/issues"
     },
     "author": "heweifeng <iheweifeng@gmail.com> (https://github.com/ihwf)",
     "license": "MIT",
-    "homepage": "https://github.com/ihwf/expo-native-alipay#readme",
+    "homepage": "https://github.com/rdcxzc/expo-native-alipay#readme",
     "dependencies": {},
     "devDependencies": {
         "@types/react": "~19.0.0",
